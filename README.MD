@@ -1,3 +1,12 @@
+# 覆盖已有配置 Cover the existed config
+```sh
+mkdir -p mpv-config
+cd mpv-config && \
+git clone https://github.com/AClon314/mpv-config-linux.git .
+rm -r ~/.config/mpv
+ln -s $(pwd)/portable_config/ ~/.config/mpv
+```
+
 # mpv播放器折腾记录
 
 _从萌新到大白，<s>用前嫌麻烦</s> 用后真香_  
