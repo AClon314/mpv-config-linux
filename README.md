@@ -1,4 +1,11 @@
-# mpv播放器折腾记录
+# 覆盖已有配置 Cover the existed config
+```sh
+mkdir -p mpv-config
+cd mpv-config && \
+git clone https://github.com/AClon314/mpv-config-linux.git .
+rm -r ~/.config/mpv
+ln -s $(pwd)/portable_config/ ~/.config/mpv
+```
 
 ## 简介
 
